@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- 设置内容的编码格式 -->
+    <meta charset="utf-8" />
+    <!-- 设置查询关键字 -->
+    <meta name="keywords" content="404页" />
+    <!-- 设置网页的描述信息 -->
+    <meta name="distribution" content="Coco5666.github.io/404" />
+    <!-- 设置作者 -->
+    <meta name="author" content="Coco56" />
+    <link rel="icon" href="github.coco56.top/title.ico" type="image/icon" />
+    <title>Coco56 GitHub个人主页 | 404 Not Found页</title>
+</head>
+
+<body>
+    <br>
+    <h1>本页地址： <a href="https://coco5666.github.io/404" target="_blank" title="">https://coco5666.github.io/404</a></h1>
+    <!-- 绘制一根线 -->
+    <hr width="100%" align="left" />
+    对不起，您所访问的页面不存在或者已删除。
+    <h1>博客首页：<a href="https://github.coco56.top/blog" target="_blank" title="">https://github.coco56.top/blog</a></h1>
+    <h2>
+        <div id="countdown"></div>
+    </h2>
+    <script language="javascript" type="text/javascript">
+        var time = 3
+        var lable = "秒钟后系统将帮您自动跳转到博客首页。"
+        var contain = document.getElementById("countdown")
+        contain.innerHTML = time.toString() + lable
+        function updateTime() {
+            time = time - 1
+            if (time >= 0) { contain.innerHTML = time.toString() + lable }
+            else { contain.innerHTML = "正在跳转到我的博客首页" }
+        }
+        setInterval("updateTime()", 1000);
+        setTimeout("javascript:location.href='https://coco5666.github.io/blog'", time * 1000);
+        // 以下方法是在新窗口中打开网页，不过一般会被浏览器拦截，因此不建议使用
+        // setTimeout("javascript:window.open('https://coco5666.github.io/blog')", time * 1000);
+    </script>
+</body>
+
+</html>
